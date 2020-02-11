@@ -1,0 +1,13 @@
+<div class="container">
+  <div>
+    <mat-form-field>
+      <input required matInput type="text" placeholder="user" [(ngModel)]="this.inscription.studentDto.id"/>
+      <mat-error>Field required</mat-error>
+    </mat-form-field>
+  </div>
+</div>
+<button mat-raised-button (click)="inscriptionSave()" type="submit">
+  <i class="material-icons">
+    check
+  </i>
+</button>
